@@ -30,11 +30,7 @@ public class CorrectActivity extends AppCompatActivity {
         btnExit3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(Intent.ACTION_MAIN);
-                newIntent.addCategory(Intent.CATEGORY_HOME);
-                newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(newIntent);
-                finish();
+                finishAffinity();
             }
         });
     }
